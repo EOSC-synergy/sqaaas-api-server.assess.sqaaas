@@ -1,0 +1,54 @@
+config:
+  credentials: []
+  project_repos:
+    github.com/EOSC-synergy/sqaaas-tooling:
+      branch: 1.6.0-alpha1
+      repo: https://github.com/EOSC-synergy/sqaaas-tooling
+    github.com/eosc-synergy/sqaaas-api-server:
+      branch: master
+      repo: https://github.com/eosc-synergy/sqaaas-api-server
+environment:
+  JPL_DOCKERFORCEBUILD: enabled
+  JPL_KEEPGOING: enabled
+sqa_criteria:
+  QC.Acc:
+    repos:
+      github.com/eosc-synergy/sqaaas-api-server git:
+        commands:
+        - /usr/bin/env sh .sqa/script.geeky-puce-serval.sh
+        container: qc.acc_homely-chocolate-gopher
+  QC.Doc:
+    repos:
+      github.com/eosc-synergy/sqaaas-api-server find_doc_files.py:
+        commands:
+        - /usr/bin/env sh .sqa/script.snappy-brass-barb.sh
+        container: qc.doc_squirrely-persimmon-avocet
+      github.com/eosc-synergy/sqaaas-api-server markdownlint:
+        commands:
+        - /usr/bin/env sh .sqa/script.crabby-beige-nightingale.sh
+        container: qc.doc_queasy-red-monkey
+  QC.FAIR:
+    repos:
+      github.com/eosc-synergy/sqaaas-api-server fair-eva:
+        commands:
+        - /usr/bin/env sh .sqa/script.lousy-cornflower-bat.sh
+        container: qc.fair_gloppy-asparagus-deer
+  QC.Lic:
+    repos:
+      github.com/eosc-synergy/sqaaas-api-server licensee:
+        commands:
+        - /usr/bin/env sh .sqa/script.thirsty-blue-shrimp.sh
+        container: qc.lic_sunny-ruby-dogfish
+  QC.Sec:
+    repos:
+      github.com/eosc-synergy/sqaaas-api-server bandit:
+        commands:
+        - /usr/bin/env sh .sqa/script.seedy-lilac-goat.sh
+        container: qc.sec_slaphappy-flax-fossa
+  QC.Sty:
+    repos:
+      github.com/eosc-synergy/sqaaas-api-server flake8:
+        commands:
+        - /usr/bin/env sh .sqa/script.cozy-periwinkle-bordeaux.sh
+        container: qc.sty_flaky-amaranth-quail
+timeout: 600
