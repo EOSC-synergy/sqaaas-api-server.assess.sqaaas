@@ -2,7 +2,7 @@ config:
   credentials: []
   project_repos:
     github.com/EOSC-synergy/sqaaas-tooling:
-      branch: 1.6.0-alpha2
+      branch: 1.6.0-alpha3
       repo: https://github.com/EOSC-synergy/sqaaas-tooling
     github.com/eosc-synergy/sqaaas-api-server:
       branch: master
@@ -15,34 +15,34 @@ sqa_criteria:
     repos:
       github.com/eosc-synergy/sqaaas-api-server git:
         commands:
-        - /usr/bin/env sh .sqa/script.pasty-firebrick-mist.sh
-        container: qc.acc_slimy-eggplant-skunk
+        - /usr/bin/env sh .sqa/script.lanky-amethyst-horse.sh
+        container: qc.acc_smelly-aquamarine-serval
   QC.Doc:
     repos:
       github.com/eosc-synergy/sqaaas-api-server find_doc_files.py:
         commands:
-        - /usr/bin/env sh .sqa/script.slaphappy-apricot-mandrill.sh
-        container: qc.doc_hilly-ecru-insect
+        - /usr/bin/env sh .sqa/script.geeky-lemon-discus.sh
+        container: qc.doc_tacky-carmine-tapir
       github.com/eosc-synergy/sqaaas-api-server markdownlint:
         commands:
-        - /usr/bin/env sh .sqa/script.pasty-pear-ray.sh
-        container: qc.doc_seedy-pink-falcon
+        - /usr/bin/env sh .sqa/script.trippy-viridian-slug.sh
+        container: qc.doc_droopy-sangria-cow
   QC.Lic:
     repos:
       github.com/eosc-synergy/sqaaas-api-server licensee:
         commands:
-        - /usr/bin/env sh .sqa/script.messy-khaki-buffalo.sh
-        container: qc.lic_pokey-myrtle-bombay
+        - /usr/bin/env sh .sqa/script.shaggy-yellow-caterpillar.sh
+        container: qc.lic_bumpy-brown-falcon
   QC.Sec:
     repos:
       github.com/eosc-synergy/sqaaas-api-server bandit:
         commands:
-        - /usr/bin/env sh .sqa/script.silly-carmine-grouse.sh
-        container: qc.sec_wiggy-smalt-ray
+        - /usr/bin/env sh .sqa/script.ready-xanthic-mongrel.sh
+        container: qc.sec_randy-goldenrod-manatee
   QC.Sty:
     repos:
       github.com/eosc-synergy/sqaaas-api-server flake8:
         commands:
-        - /usr/bin/env sh .sqa/script.stuffy-cinnamon-wildebeest.sh
-        container: qc.sty_snippy-sangria-avocet
+        - /usr/bin/env sh .sqa/script.hilly-lime-tiger.sh
+        container: qc.sty_gimpy-bistre-tiger
 timeout: 600
