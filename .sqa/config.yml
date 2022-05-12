@@ -15,40 +15,40 @@ sqa_criteria:
     repos:
       github.com/eosc-synergy/sqaaas-api-server git:
         commands:
-        - /usr/bin/env sh .sqa/script.shabby-apricot-skunk.sh
-        container: qc.acc_paltry-ochre-dunker
+        - /usr/bin/env sh .sqa/script.sleazy-bronze-malamute.sh
+        container: qc.acc_trippy-jade-sloth
   QC.Doc:
     repos:
       github.com/eosc-synergy/sqaaas-api-server find_doc_files.py:
         commands:
-        - /usr/bin/env sh .sqa/script.homely-chocolate-okapi.sh
-        container: qc.doc_freaky-eggplant-centipede
+        - /usr/bin/env sh .sqa/script.cheeky-mauve-toucan.sh
+        container: qc.doc_bluesy-white-turkey
       github.com/eosc-synergy/sqaaas-api-server markdownlint:
         commands:
-        - /usr/bin/env sh .sqa/script.freaky-white-dog.sh
-        container: qc.doc_silly-denim-chimpanzee
+        - /usr/bin/env sh .sqa/script.trippy-burgundy-wombat.sh
+        container: qc.doc_shaky-xanthic-wallaby
   QC.Lic:
     repos:
       github.com/eosc-synergy/sqaaas-api-server licensee:
         commands:
-        - /usr/bin/env sh .sqa/script.snoopy-magnolia-mule.sh
-        container: qc.lic_bluesy-thistle-mouse
+        - /usr/bin/env sh .sqa/script.crappy-peach-mayfly.sh
+        container: qc.lic_flaky-coral-cougar
   QC.Sec:
     repos:
       github.com/eosc-synergy/sqaaas-api-server bandit:
         commands:
-        - /usr/bin/env sh .sqa/script.snoopy-azure-bat.sh
-        container: qc.sec_pasty-chocolate-deer
+        - /usr/bin/env sh .sqa/script.pokey-platinum-frise.sh
+        container: qc.sec_lousy-seashell-grouse
   QC.Sty:
     repos:
       github.com/eosc-synergy/sqaaas-api-server flake8:
         commands:
-        - /usr/bin/env sh .sqa/script.squirrely-corn-abyssinian.sh
-        container: qc.sty_thirsty-burgundy-stingray
+        - /usr/bin/env sh .sqa/script.leaky-chocolate-armadillo.sh
+        container: qc.sty_homely-pink-fox
   QC.Ver:
     repos:
       github.com/eosc-synergy/sqaaas-api-server is_semver.py:
         commands:
-        - /usr/bin/env sh .sqa/script.scummy-cinnamon-loon.sh
-        container: qc.ver_chewy-green-hare
+        - /usr/bin/env sh .sqa/script.surly-salmon-lemming.sh
+        container: qc.ver_stinky-dandelion-elephant
 timeout: 600
