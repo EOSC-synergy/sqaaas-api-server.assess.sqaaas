@@ -15,40 +15,40 @@ sqa_criteria:
     repos:
       github.com/eosc-synergy/sqaaas-api-server git:
         commands:
-        - /usr/bin/env sh .sqa/script.greasy-lavender-avocet.sh
-        container: qc.acc_grumpy-russet-uguisu
+        - /usr/bin/env sh .sqa/script.squeaky-ecru-chin.sh
+        container: qc.acc_greasy-scarlet-lobster
   QC.Doc:
     repos:
       github.com/eosc-synergy/sqaaas-api-server find_doc_files.py:
         commands:
-        - /usr/bin/env sh .sqa/script.jumpy-yellow-crocodile.sh
-        container: qc.doc_skinny-ivory-pinscher
+        - /usr/bin/env sh .sqa/script.smelly-lilac-pig.sh
+        container: qc.doc_homely-scarlet-cockroach
       github.com/eosc-synergy/sqaaas-api-server markdownlint:
         commands:
-        - /usr/bin/env sh .sqa/script.gloppy-fuchsia-bandicoot.sh
-        container: qc.doc_freaky-auburn-fossa
+        - /usr/bin/env sh .sqa/script.homely-gamboge-cockroach.sh
+        container: qc.doc_queasy-buff-ladybird
   QC.Lic:
     repos:
       github.com/eosc-synergy/sqaaas-api-server licensee:
         commands:
-        - /usr/bin/env sh .sqa/script.clammy-lavender-akita.sh
-        container: qc.lic_sunny-magnolia-yak
+        - /usr/bin/env sh .sqa/script.lovely-cerise-fossa.sh
+        container: qc.lic_sloppy-turquoise-orangutan
   QC.Sec:
     repos:
       github.com/eosc-synergy/sqaaas-api-server bandit:
         commands:
-        - /usr/bin/env sh .sqa/script.ready-crimson-giraffe.sh
-        container: qc.sec_beady-copper-stingray
+        - /usr/bin/env sh .sqa/script.woolly-apricot-pinscher.sh
+        container: qc.sec_silly-ruby-gerbil
   QC.Sty:
     repos:
       github.com/eosc-synergy/sqaaas-api-server flake8:
         commands:
-        - /usr/bin/env sh .sqa/script.frumpy-lilac-affenpinscher.sh
-        container: qc.sty_lanky-razzmatazz-shrimp
+        - /usr/bin/env sh .sqa/script.wiggy-magnolia-meerkat.sh
+        container: qc.sty_homey-yellow-seal
   QC.Ver:
     repos:
       github.com/eosc-synergy/sqaaas-api-server is_semver.py:
         commands:
-        - /usr/bin/env sh .sqa/script.hasty-pink-worm.sh
-        container: qc.ver_freaky-violet-capybara
+        - /usr/bin/env sh .sqa/script.queasy-auburn-flamingo.sh
+        container: qc.ver_hasty-ivory-reindeer
 timeout: 600
