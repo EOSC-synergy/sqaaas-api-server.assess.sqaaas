@@ -15,40 +15,40 @@ sqa_criteria:
     repos:
       github.com/eosc-synergy/sqaaas-api-server git:
         commands:
-        - /usr/bin/env sh .sqa/script.skinny-salmon-ostrich.sh
-        container: qc.acc_crappy-lime-wallaby
+        - /usr/bin/env sh .sqa/script.shabby-apricot-skunk.sh
+        container: qc.acc_paltry-ochre-dunker
   QC.Doc:
     repos:
       github.com/eosc-synergy/sqaaas-api-server find_doc_files.py:
         commands:
-        - /usr/bin/env sh .sqa/script.sleepy-ivory-bulldog.sh
-        container: qc.doc_sloppy-brown-gibbon
+        - /usr/bin/env sh .sqa/script.homely-chocolate-okapi.sh
+        container: qc.doc_freaky-eggplant-centipede
       github.com/eosc-synergy/sqaaas-api-server markdownlint:
         commands:
-        - /usr/bin/env sh .sqa/script.crappy-cinnabar-dormouse.sh
-        container: qc.doc_slaphappy-magnolia-foxhound
+        - /usr/bin/env sh .sqa/script.freaky-white-dog.sh
+        container: qc.doc_silly-denim-chimpanzee
   QC.Lic:
     repos:
       github.com/eosc-synergy/sqaaas-api-server licensee:
         commands:
-        - /usr/bin/env sh .sqa/script.lanky-fuchsia-sloth.sh
-        container: qc.lic_stuffy-silver-serval
+        - /usr/bin/env sh .sqa/script.snoopy-magnolia-mule.sh
+        container: qc.lic_bluesy-thistle-mouse
   QC.Sec:
     repos:
       github.com/eosc-synergy/sqaaas-api-server bandit:
         commands:
-        - /usr/bin/env sh .sqa/script.ready-emerald-ferret.sh
-        container: qc.sec_zippy-auburn-sparrow
+        - /usr/bin/env sh .sqa/script.snoopy-azure-bat.sh
+        container: qc.sec_pasty-chocolate-deer
   QC.Sty:
     repos:
       github.com/eosc-synergy/sqaaas-api-server flake8:
         commands:
-        - /usr/bin/env sh .sqa/script.shabby-apricot-spitz.sh
-        container: qc.sty_stinky-sepia-bloodhound
+        - /usr/bin/env sh .sqa/script.squirrely-corn-abyssinian.sh
+        container: qc.sty_thirsty-burgundy-stingray
   QC.Ver:
     repos:
       github.com/eosc-synergy/sqaaas-api-server is_semver.py:
         commands:
-        - /usr/bin/env sh .sqa/script.flimsy-indigo-centipede.sh
-        container: qc.ver_gamy-ecru-hummingbird
+        - /usr/bin/env sh .sqa/script.scummy-cinnamon-loon.sh
+        container: qc.ver_chewy-green-hare
 timeout: 600
