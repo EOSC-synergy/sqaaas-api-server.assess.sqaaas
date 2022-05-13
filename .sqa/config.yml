@@ -2,7 +2,7 @@ config:
   credentials: []
   project_repos:
     github.com/EOSC-synergy/sqaaas-api-server:
-      branch: release/2.0.0
+      branch: master
       repo: https://github.com/EOSC-synergy/sqaaas-api-server
     github.com/EOSC-synergy/sqaaas-tooling:
       branch: 1.6.0-alpha5
@@ -15,40 +15,40 @@ sqa_criteria:
     repos:
       github.com/EOSC-synergy/sqaaas-api-server git:
         commands:
-        - /usr/bin/env sh .sqa/script.gimpy-rose-ant.sh
-        container: qc.acc_sleepy-firebrick-opossum
+        - /usr/bin/env sh .sqa/script.clammy-emerald-donkey.sh
+        container: qc.acc_woolly-wheat-bat
   QC.Doc:
     repos:
       github.com/EOSC-synergy/sqaaas-api-server find_doc_files.py:
         commands:
-        - /usr/bin/env sh .sqa/script.woozy-bronze-tetra.sh
-        container: qc.doc_skimpy-white-hyrax
+        - /usr/bin/env sh .sqa/script.snappy-wheat-zebu.sh
+        container: qc.doc_greasy-silver-cuscus
       github.com/EOSC-synergy/sqaaas-api-server markdownlint:
         commands:
-        - /usr/bin/env sh .sqa/script.bluesy-lime-stingray.sh
-        container: qc.doc_sloppy-cobalt-pinscher
+        - /usr/bin/env sh .sqa/script.hazy-amber-hippopotamus.sh
+        container: qc.doc_slimy-rose-collie
   QC.Lic:
     repos:
       github.com/EOSC-synergy/sqaaas-api-server licensee:
         commands:
-        - /usr/bin/env sh .sqa/script.woozy-grey-loon.sh
-        container: qc.lic_tasty-gamboge-chicken
+        - /usr/bin/env sh .sqa/script.grumpy-cream-olm.sh
+        container: qc.lic_clammy-coral-cassowary
   QC.Sec:
     repos:
       github.com/EOSC-synergy/sqaaas-api-server bandit:
         commands:
-        - /usr/bin/env sh .sqa/script.thirsty-silver-tang.sh
-        container: qc.sec_hazy-saffron-hornet
+        - /usr/bin/env sh .sqa/script.cranky-orange-booby.sh
+        container: qc.sec_leaky-heliotrope-rottweiler
   QC.Sty:
     repos:
       github.com/EOSC-synergy/sqaaas-api-server flake8:
         commands:
-        - /usr/bin/env sh .sqa/script.snoopy-celadon-newt.sh
-        container: qc.sty_nippy-copper-kudu
+        - /usr/bin/env sh .sqa/script.wheezy-magenta-lionfish.sh
+        container: qc.sty_jumpy-tomato-echidna
   QC.Ver:
     repos:
       github.com/EOSC-synergy/sqaaas-api-server is_semver.py:
         commands:
-        - /usr/bin/env sh .sqa/script.queasy-blue-cichlid.sh
-        container: qc.ver_shaky-gold-barnacle
+        - /usr/bin/env sh .sqa/script.cheeky-copper-goose.sh
+        container: qc.ver_bumpy-seashell-cuttlefish
 timeout: 600
