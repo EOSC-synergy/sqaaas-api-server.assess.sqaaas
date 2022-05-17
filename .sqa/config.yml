@@ -15,40 +15,40 @@ sqa_criteria:
     repos:
       github.com/eosc-synergy/sqaaas-api-server git:
         commands:
-        - /usr/bin/env sh .sqa/script.paltry-peach-tamarin.sh
-        container: qc.acc_whiny-sangria-markhor
+        - /usr/bin/env sh .sqa/script.scummy-olive-javanese.sh
+        container: qc.acc_cloudy-carmine-turtle
   QC.Doc:
     repos:
       github.com/eosc-synergy/sqaaas-api-server find_doc_files.py:
         commands:
-        - /usr/bin/env sh .sqa/script.scummy-scarlet-urchin.sh
-        container: qc.doc_skanky-aquamarine-catfish
+        - /usr/bin/env sh .sqa/script.tasty-puce-cockroach.sh
+        container: qc.doc_queasy-chocolate-binturong
       github.com/eosc-synergy/sqaaas-api-server markdownlint:
         commands:
-        - /usr/bin/env sh .sqa/script.leaky-buff-balinese.sh
-        container: qc.doc_cozy-zucchini-hyena
+        - /usr/bin/env sh .sqa/script.blurry-rose-barb.sh
+        container: qc.doc_gimpy-olive-tortoise
   QC.Lic:
     repos:
       github.com/eosc-synergy/sqaaas-api-server licensee:
         commands:
-        - /usr/bin/env sh .sqa/script.baggy-maroon-stoat.sh
-        container: qc.lic_paltry-cinnabar-paradise
+        - /usr/bin/env sh .sqa/script.craggy-lemon-oriole.sh
+        container: qc.lic_cloudy-lavender-deer
   QC.Sec:
     repos:
       github.com/eosc-synergy/sqaaas-api-server bandit:
         commands:
-        - /usr/bin/env sh .sqa/script.hasty-linen-abyssinian.sh
-        container: qc.sec_hilly-viridian-kangaroo
+        - /usr/bin/env sh .sqa/script.paltry-beige-javanese.sh
+        container: qc.sec_ugly-cornflower-clam
   QC.Sty:
     repos:
       github.com/eosc-synergy/sqaaas-api-server flake8:
         commands:
-        - /usr/bin/env sh .sqa/script.slimy-carmine-liger.sh
-        container: qc.sty_randy-ivory-kingfisher
+        - /usr/bin/env sh .sqa/script.fuzzy-lilac-macaw.sh
+        container: qc.sty_craggy-cobalt-hedgehog
   QC.Ver:
     repos:
       github.com/eosc-synergy/sqaaas-api-server is_semver.py:
         commands:
-        - /usr/bin/env sh .sqa/script.silly-chartreuse-terrier.sh
-        container: qc.ver_homely-zucchini-dachsbracke
+        - /usr/bin/env sh .sqa/script.crappy-scarlet-stingray.sh
+        container: qc.ver_pretty-mustard-tang
 timeout: 600
