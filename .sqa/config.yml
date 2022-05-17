@@ -15,40 +15,40 @@ sqa_criteria:
     repos:
       github.com/eosc-synergy/sqaaas-api-server git:
         commands:
-        - /usr/bin/env sh .sqa/script.ugly-chestnut-wolfhound.sh
-        container: qc.acc_snoopy-fuchsia-kiwi
+        - /usr/bin/env sh .sqa/script.paltry-peach-tamarin.sh
+        container: qc.acc_whiny-sangria-markhor
   QC.Doc:
     repos:
       github.com/eosc-synergy/sqaaas-api-server find_doc_files.py:
         commands:
-        - /usr/bin/env sh .sqa/script.cheeky-bronze-turtle.sh
-        container: qc.doc_clammy-wheat-coral
+        - /usr/bin/env sh .sqa/script.scummy-scarlet-urchin.sh
+        container: qc.doc_skanky-aquamarine-catfish
       github.com/eosc-synergy/sqaaas-api-server markdownlint:
         commands:
-        - /usr/bin/env sh .sqa/script.wheezy-pink-yak.sh
-        container: qc.doc_paltry-brown-giraffe
+        - /usr/bin/env sh .sqa/script.leaky-buff-balinese.sh
+        container: qc.doc_cozy-zucchini-hyena
   QC.Lic:
     repos:
       github.com/eosc-synergy/sqaaas-api-server licensee:
         commands:
-        - /usr/bin/env sh .sqa/script.woozy-apricot-javanese.sh
-        container: qc.lic_wiggy-eggplant-mandrill
+        - /usr/bin/env sh .sqa/script.baggy-maroon-stoat.sh
+        container: qc.lic_paltry-cinnabar-paradise
   QC.Sec:
     repos:
       github.com/eosc-synergy/sqaaas-api-server bandit:
         commands:
-        - /usr/bin/env sh .sqa/script.slimy-emerald-mongoose.sh
-        container: qc.sec_wiggy-khaki-bobcat
+        - /usr/bin/env sh .sqa/script.hasty-linen-abyssinian.sh
+        container: qc.sec_hilly-viridian-kangaroo
   QC.Sty:
     repos:
       github.com/eosc-synergy/sqaaas-api-server flake8:
         commands:
-        - /usr/bin/env sh .sqa/script.tacky-viridian-chihuahua.sh
-        container: qc.sty_chummy-buff-dog
+        - /usr/bin/env sh .sqa/script.slimy-carmine-liger.sh
+        container: qc.sty_randy-ivory-kingfisher
   QC.Ver:
     repos:
       github.com/eosc-synergy/sqaaas-api-server is_semver.py:
         commands:
-        - /usr/bin/env sh .sqa/script.stealthy-asparagus-newt.sh
-        container: qc.ver_crabby-ivory-jackal
+        - /usr/bin/env sh .sqa/script.silly-chartreuse-terrier.sh
+        container: qc.ver_homely-zucchini-dachsbracke
 timeout: 600
