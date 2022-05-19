@@ -51,4 +51,4 @@ sqa_criteria:
         commands:
         - /usr/bin/env sh .sqa/script.gimpy-cinnamon-bobcat.sh
         container: qc.ver_gamy-green-dugong
-timeout: 600
+timeout: 500
