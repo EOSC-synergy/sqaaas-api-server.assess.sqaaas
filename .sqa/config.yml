@@ -15,40 +15,40 @@ sqa_criteria:
     repos:
       github.com/eosc-synergy/sqaaas-api-server git:
         commands:
-        - /usr/bin/env sh .sqa/script.flimsy-black-spider.sh
-        container: qc.acc_wiggy-salmon-kingfisher
+        - /usr/bin/env sh .sqa/script.thirsty-russet-drever.sh
+        container: qc.acc_hasty-amber-tiger
   QC.Doc:
     repos:
       github.com/eosc-synergy/sqaaas-api-server find_doc_files.py:
         commands:
-        - /usr/bin/env sh .sqa/script.grumpy-orange-cuscus.sh
-        container: qc.doc_breezy-pumpkin-zebu
+        - /usr/bin/env sh .sqa/script.pasty-cinnabar-toucan.sh
+        container: qc.doc_nippy-maroon-antelope
       github.com/eosc-synergy/sqaaas-api-server markdownlint:
         commands:
-        - /usr/bin/env sh .sqa/script.wiggy-indigo-sparrow.sh
-        container: qc.doc_skinny-ochre-molly
+        - /usr/bin/env sh .sqa/script.sleazy-vermilion-coati.sh
+        container: qc.doc_homely-celadon-slug
   QC.Lic:
     repos:
       github.com/eosc-synergy/sqaaas-api-server licensee:
         commands:
-        - /usr/bin/env sh .sqa/script.tacky-blue-kingfisher.sh
-        container: qc.lic_crabby-dandelion-earwig
+        - /usr/bin/env sh .sqa/script.flaky-gold-oriole.sh
+        container: qc.lic_nerdy-thistle-chameleon
   QC.Sec:
     repos:
       github.com/eosc-synergy/sqaaas-api-server bandit:
         commands:
-        - /usr/bin/env sh .sqa/script.scanty-mustard-bulldog.sh
-        container: qc.sec_cozy-apricot-quokka
+        - /usr/bin/env sh .sqa/script.lumpy-gamboge-wildebeest.sh
+        container: qc.sec_crabby-dandelion-lizard
   QC.Sty:
     repos:
       github.com/eosc-synergy/sqaaas-api-server flake8:
         commands:
-        - /usr/bin/env sh .sqa/script.grumpy-amaranth-shrew.sh
-        container: qc.sty_pretty-coral-magpie
+        - /usr/bin/env sh .sqa/script.lumpy-russet-uguisu.sh
+        container: qc.sty_stuffy-scarlet-cheetah
   QC.Ver:
     repos:
       github.com/eosc-synergy/sqaaas-api-server get_git_tags.py:
         commands:
-        - /usr/bin/env sh .sqa/script.breezy-khaki-octopus.sh
-        container: qc.ver_cheeky-denim-gar
+        - /usr/bin/env sh .sqa/script.hazy-turquoise-macaque.sh
+        container: qc.ver_woozy-ultramarine-kudu
 timeout: 600
