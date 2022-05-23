@@ -1,4 +1,4 @@
 (
 cd github.com/eosc-synergy/sqaaas-api-server &&
-    is_semver.py
+    find_doc_files.py --file_type all
 )
