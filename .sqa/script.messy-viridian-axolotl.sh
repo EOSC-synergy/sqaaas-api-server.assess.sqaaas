@@ -12,7 +12,7 @@ fi
 printf "$(cat /im/auth.dat)" "${IM_USER}" "${IM_PASS}" "${OPENSTACK_USER}" "${OPENSTACK_PASS}" > /im/auth.dat
 echo "Generated auth.dat file:"
 ls -l /im/auth.dat
-printf "$(cat test.radl)" "stratus.ncg.ingrid.pt" "5336f60b-d4cc-4285-a573-1b706cbbe40b" > /im/test-ost.radl
+printf "$(cat github.com/orviz/IM-sqaaas-test/test.radl)" "stratus.ncg.ingrid.pt" "5336f60b-d4cc-4285-a573-1b706cbbe40b" > /im/test-ost.radl
 echo "Printing radl file"
 cat /im/test-ost.radl
 echo
