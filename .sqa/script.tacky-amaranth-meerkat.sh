@@ -12,6 +12,10 @@ fi
 printf "$(cat /im/auth.dat)" "${IM_USER}" "${IM_PASS}" "${OPENSTACK_USER}" "${OPENSTACK_PASS}" > /im/auth.dat
 echo "Generated auth.dat file:"
 ls -l /im/auth.dat
+echo "Get current path"
+pwd
+echo "List files under current path"
+ls -l 
 echo "Printing IM config file: github.com/orviz/IM-sqaaas-test/test.radl"
 cat github.com/orviz/IM-sqaaas-test/test.radl
 echo
