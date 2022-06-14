@@ -12,11 +12,8 @@ fi
 printf "$(cat /im/auth.dat)" "${IM_USER}" "${IM_PASS}" "${OPENSTACK_USER}" "${OPENSTACK_PASS}" > /im/auth.dat
 echo "Generated auth.dat file:"
 ls -l /im/auth.dat
-printf "$(cat github.com/orviz/IM-sqaaas-test/test.radl)" "stratus.ncg.ingrid.pt" "5336f60b-d4cc-4285-a573-1b706cbbe40b" > /im/test-ost.radl
-echo "Printing radl file"
-cat /im/test-ost.radl
 echo
-im_client.py -r "https://appsgrycap.i3m.upv.es:31443/im/" -a "/im/auth.dat" create_wait_outputs /im/test-ost.radl > ./im_radl.json
+im_client.py -r "https://appsgrycap.i3m.upv.es:31443/im/" -a "/im/auth.dat" create_wait_outputs github.com/orviz/IM-sqaaas-test/test.radl > ./im_radl.json
 RETURN_CODE=$?
 echo "im_client.py create_wait_outputs return code: ${RETURN_CODE}"
 echo "Infrastructure Manager output:"
