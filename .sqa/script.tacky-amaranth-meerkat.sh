@@ -17,9 +17,9 @@ pwd
 echo "List files under current path"
 ls -l 
 echo "Printing IM config file: github.com/orviz/IM-sqaaas-test/test.radl"
-cat github.com/orviz/IM-sqaaas-test/test.radl
+cat test.radl
 echo
-im_client.py -r "https://appsgrycap.i3m.upv.es:31443/im/" -a "/im/auth.dat" create_wait_outputs github.com/orviz/IM-sqaaas-test/test.radl > ./im_radl.json
+im_client.py -r "https://appsgrycap.i3m.upv.es:31443/im/" -a "/im/auth.dat" create_wait_outputs test.radl > ./im_radl.json
 RETURN_CODE=$?
 echo "im_client.py create_wait_outputs return code: ${RETURN_CODE}"
 echo "Infrastructure Manager output:"
