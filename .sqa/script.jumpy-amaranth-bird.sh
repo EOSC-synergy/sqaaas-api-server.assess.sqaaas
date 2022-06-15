@@ -12,19 +12,19 @@ fi
 printf "$(cat /im/auth.dat)" "${IM_USER}" "${IM_PASS}" "${OPENSTACK_USER}" "${OPENSTACK_PASS}" > /im/auth.dat
 echo "Generated auth.dat file:"
 ls -l /im/auth.dat
-echo "Printing IM config file: test.radl"
-cat test.radl
+echo "Printing IM config file: tosca_create.yml"
+cat tosca_create.yml
 echo
-im_client.py -r "https://appsgrycap.i3m.upv.es:31443/im/" -a "/im/auth.dat" create_wait_outputs test.radl > ./im_radl.json
+im_client.py -r "https://appsgrycap.i3m.upv.es:31443/im/" -a "/im/auth.dat" create_wait_outputs tosca_create.yml > ./im_yaml.json
 RETURN_CODE=$?
 echo "im_client.py create_wait_outputs return code: ${RETURN_CODE}"
 echo "Infrastructure Manager output:"
-cat ./im_radl.json
-awk "/\{/,/\}/ { print $1 }" ./im_radl.json > ./im_radl_aux.json
+cat ./im_yaml.json
+awk "/\{/,/\}/ { print $1 }" ./im_yaml.json > ./im_yaml_aux.json
 echo "Infrastructure Manager output (only json part):"
-cat ./im_radl_aux.json
+cat ./im_yaml_aux.json
 echo
-INFID=$(jq -r '[ .infid ] | .[]' ./im_radl_aux.json)
+INFID=$(jq -r '[ .infid ] | .[]' ./im_yaml_aux.json)
 echo "INFID=${INFID}"
 if [ ${RETURN_CODE} -eq 0 ] && ! [[ -z "${INFID}" && "x${INFID}x" == "xnullx" ]]; then
   echo "Deployment finished with success. Logs:"
