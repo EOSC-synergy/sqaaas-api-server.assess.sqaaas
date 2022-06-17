@@ -1,4 +1,6 @@
-(mkdir /im
+(
+cp tosca_create.yml github.com/orviz/IM-sqaaas-test/tosca_create.yml
+mkdir /im
 cat <<EOF >> /im/auth.dat
 # InfrastructureManager auth
 type = InfrastructureManager; username = %s; password = %s
@@ -12,10 +14,10 @@ fi
 printf "$(cat /im/auth.dat)" "${IM_USER}" "${IM_PASS}" "${OPENSTACK_USER}" "${OPENSTACK_PASS}" > /im/auth.dat
 echo "Generated auth.dat file:"
 ls -l /im/auth.dat
-echo "Printing IM config file: tosca_create.yml"
-cat tosca_create.yml
+echo "Printing IM config file: github.com/orviz/IM-sqaaas-test/tosca_create.yml"
+cat github.com/orviz/IM-sqaaas-test/tosca_create.yml
 echo
-im_client.py -r "https://appsgrycap.i3m.upv.es:31443/im/" -a "/im/auth.dat" create_wait_outputs tosca_create.yml > ./im_yaml.json
+im_client.py -r "https://appsgrycap.i3m.upv.es:31443/im/" -a "/im/auth.dat" create_wait_outputs github.com/orviz/IM-sqaaas-test/tosca_create.yml > ./im_yaml.json
 RETURN_CODE=$?
 echo "im_client.py create_wait_outputs return code: ${RETURN_CODE}"
 echo "Infrastructure Manager output:"
