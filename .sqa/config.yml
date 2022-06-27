@@ -1,24 +1,12 @@
 config:
-  credentials:
-  - id: upv_im_id
-    password_var: IM_PASS
-    username_var: IM_USER
-  - id: incd_openstack_id
-    password_var: OPENSTACK_PASS
-    username_var: OPENSTACK_USER
+  credentials: []
   project_repos:
     github.com/EOSC-synergy/sqaaas-tooling:
-      branch: 1.7.0-alpha2
+      branch: release/1.7.0
       repo: https://github.com/EOSC-synergy/sqaaas-tooling
     github.com/eosc-synergy/sqaaas-api-server:
       branch: master
       repo: https://github.com/eosc-synergy/sqaaas-api-server
-    github.com/eosc-synergy/sqaaas-docs:
-      branch: master
-      repo: https://github.com/eosc-synergy/sqaaas-docs
-    github.com/orviz/IM-sqaaas-test:
-      branch: master
-      repo: https://github.com/orviz/IM-sqaaas-test
 environment:
   JPL_DOCKERFORCEBUILD: enabled
   JPL_KEEPGOING: enabled
@@ -27,56 +15,50 @@ sqa_criteria:
     repos:
       github.com/eosc-synergy/sqaaas-api-server git:
         commands:
-        - /usr/bin/env sh .sqa/script.stuffy-silver-hound.sh
-        container: qc.acc_sleepy-chestnut-quoll
+        - /usr/bin/env sh .sqa/script.homey-sepia-beaver.sh
+        container: qc.acc_fuzzy-amethyst-octopus
   QC.Doc:
     repos:
-      github.com/eosc-synergy/sqaaas-docs find_doc_files.py:
+      github.com/eosc-synergy/sqaaas-api-server find_doc_files.py:
         commands:
-        - /usr/bin/env sh .sqa/script.scaly-magnolia-grouse.sh
-        container: qc.doc_pasty-grey-stingray
-      github.com/eosc-synergy/sqaaas-docs git:
+        - /usr/bin/env sh .sqa/script.wheezy-alizarin-kudu.sh
+        container: qc.doc_chummy-beige-booby
+      github.com/eosc-synergy/sqaaas-api-server git:
         commands:
-        - /usr/bin/env sh .sqa/script.sleepy-carmine-moth.sh
-        container: qc.doc_crappy-magnolia-albatross
-      github.com/eosc-synergy/sqaaas-docs markdownlint:
+        - /usr/bin/env sh .sqa/script.gimpy-tomato-ray.sh
+        container: qc.doc_lanky-khaki-dalmatian
+      github.com/eosc-synergy/sqaaas-api-server markdownlint:
         commands:
-        - /usr/bin/env sh .sqa/script.lanky-charcoal-tarsier.sh
-        container: qc.doc_silly-myrtle-manatee
+        - /usr/bin/env sh .sqa/script.stealthy-olivine-terrier.sh
+        container: qc.doc_baggy-cream-butterfly
   QC.FAIR:
     repos:
       github.com/eosc-synergy/sqaaas-api-server F-UJI:
         commands:
-        - /usr/bin/env sh .sqa/script.boozy-orchid-blue.sh
-        container: qc.fair_muzzy-amethyst-cattle
+        - /usr/bin/env sh .sqa/script.cozy-periwinkle-wombat.sh
+        container: qc.fair_chummy-taupe-dunker
   QC.Lic:
     repos:
       github.com/eosc-synergy/sqaaas-api-server licensee:
         commands:
-        - /usr/bin/env sh .sqa/script.ready-viridian-bongo.sh
-        container: qc.lic_skinny-amaranth-akita
+        - /usr/bin/env sh .sqa/script.stinky-gold-terrier.sh
+        container: qc.lic_gamy-olive-collie
   QC.Sec:
     repos:
       github.com/eosc-synergy/sqaaas-api-server bandit:
         commands:
-        - /usr/bin/env sh .sqa/script.crabby-olive-maltese.sh
-        container: qc.sec_clammy-wheat-dodo
+        - /usr/bin/env sh .sqa/script.sloppy-zucchini-bat.sh
+        container: qc.sec_lanky-silver-wallaby
   QC.Sty:
     repos:
       github.com/eosc-synergy/sqaaas-api-server flake8:
         commands:
-        - /usr/bin/env sh .sqa/script.droopy-sangria-tarantula.sh
-        container: qc.sty_fuzzy-blue-mule
+        - /usr/bin/env sh .sqa/script.whiny-jade-quetzal.sh
+        container: qc.sty_homey-maroon-mastiff
   QC.Ver:
     repos:
       github.com/eosc-synergy/sqaaas-api-server get_git_tags.py:
         commands:
-        - /usr/bin/env sh .sqa/script.goopy-lilac-otter.sh
-        container: qc.ver_chewy-fuchsia-frog
-  SvcQC.Dep:
-    repos:
-      github.com/orviz/IM-sqaaas-test im_client:
-        commands:
-        - /usr/bin/env sh .sqa/script.homely-firebrick-paradise.sh
-        container: svcqc.dep_squirrely-cobalt-chin
+        - /usr/bin/env sh .sqa/script.snappy-heliotrope-walrus.sh
+        container: qc.ver_surly-jade-echidna
 timeout: 600
