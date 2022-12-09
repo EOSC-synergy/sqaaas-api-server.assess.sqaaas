@@ -1,4 +1,4 @@
 (
-cd github.com/EOSC-synergy/sqaaas-api-server &&
+cd github.com/eosc-synergy/sqaaas-api-server &&
     licensee detect . --confidence 60 --json
 )
