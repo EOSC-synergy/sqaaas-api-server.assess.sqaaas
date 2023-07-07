@@ -1,4 +1,4 @@
 (
-cd github.com/eosc-synergy/sqaaas-api-server &&
+cd github.com/EOSC-synergy/sqaaas-api-server &&
     hadolint docker/Dockerfile --failure-threshold error
 )
