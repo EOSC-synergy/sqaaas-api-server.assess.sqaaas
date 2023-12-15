@@ -2,7 +2,7 @@ config:
   credentials: []
   project_repos:
     github.com/EOSC-synergy/sqaaas-tooling:
-      branch: release/1.7.12
+      branch: release/1.7.13
       repo: https://github.com/EOSC-synergy/sqaaas-tooling
     github.com/eosc-synergy/sqaaas-api-server:
       branch: main
@@ -15,32 +15,32 @@ sqa_criteria:
     repos:
       github.com/eosc-synergy/sqaaas-api-server git:
         commands:
-        - /usr/bin/env sh .sqa/script.wheezy-green-meerkat.sh
-        container: qc.acc_trippy-green-pig
+        - /usr/bin/env sh .sqa/script.slaphappy-lilac-magpie.sh
+        container: qc.acc_stinky-rose-mist
   QC.Doc:
     repos:
       github.com/eosc-synergy/sqaaas-api-server find_doc_files.py:
         commands:
-        - /usr/bin/env sh .sqa/script.sickly-ultramarine-zebra.sh
-        container: qc.doc_chewy-asparagus-quoll
+        - /usr/bin/env sh .sqa/script.wimpy-beige-bison.sh
+        container: qc.doc_flaky-orange-collie
       github.com/eosc-synergy/sqaaas-api-server git:
         commands:
-        - /usr/bin/env sh .sqa/script.whiny-fuchsia-horse.sh
-        container: qc.doc_wimpy-lime-alligator
+        - /usr/bin/env sh .sqa/script.sunny-seashell-llama.sh
+        container: qc.doc_stealthy-rose-koala
       github.com/eosc-synergy/sqaaas-api-server markdownlint:
         commands:
-        - /usr/bin/env sh .sqa/script.geeky-taupe-blue.sh
-        container: qc.doc_hazy-linen-alligator
+        - /usr/bin/env sh .sqa/script.gummy-scarlet-coyote.sh
+        container: qc.doc_gimpy-pumpkin-lynx
   QC.Lic:
     repos:
       github.com/eosc-synergy/sqaaas-api-server licensee:
         commands:
-        - /usr/bin/env sh .sqa/script.foggy-maroon-quail.sh
-        container: qc.lic_skanky-carmine-flounder
+        - /usr/bin/env sh .sqa/script.smelly-aquamarine-cuscus.sh
+        container: qc.lic_muzzy-grey-leopard
   QC.Ver:
     repos:
       github.com/eosc-synergy/sqaaas-api-server get_git_tags.py:
         commands:
-        - /usr/bin/env sh .sqa/script.surly-amethyst-quail.sh
-        container: qc.ver_goopy-cinnamon-beaver
+        - /usr/bin/env sh .sqa/script.smelly-lime-birman.sh
+        container: qc.ver_goopy-yellow-vole
 timeout: 5400
