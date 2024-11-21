@@ -1,46 +1,78 @@
 config:
   credentials: []
   project_repos:
-    github.com/EOSC-synergy/sqaaas-tooling:
-      branch: release/1.7.13
-      repo: https://github.com/EOSC-synergy/sqaaas-tooling
-    github.com/eosc-synergy/sqaaas-api-server:
+    github.com/EOSC-synergy/sqaaas-api-server:
       branch: main
-      repo: https://github.com/eosc-synergy/sqaaas-api-server
+      repo: https://github.com/EOSC-synergy/sqaaas-api-server
+    github.com/EOSC-synergy/sqaaas-tooling:
+      branch: release/2.2.1
+      repo: https://github.com/EOSC-synergy/sqaaas-tooling
 environment:
   JPL_DOCKERFORCEBUILD: enabled
   JPL_KEEPGOING: enabled
 sqa_criteria:
   QC.Acc:
     repos:
-      github.com/eosc-synergy/sqaaas-api-server git:
+      github.com/EOSC-synergy/sqaaas-api-server git:
         commands:
-        - /usr/bin/env sh .sqa/script.slaphappy-lilac-magpie.sh
-        container: qc.acc_stinky-rose-mist
+        - /usr/bin/env sh .sqa/script.sloppy-white-mongoose.sh
+        container: qc.acc_droopy-corn-greyhound
   QC.Doc:
     repos:
-      github.com/eosc-synergy/sqaaas-api-server find_doc_files.py:
+      github.com/EOSC-synergy/sqaaas-api-server find_doc_files.py:
         commands:
-        - /usr/bin/env sh .sqa/script.wimpy-beige-bison.sh
-        container: qc.doc_flaky-orange-collie
-      github.com/eosc-synergy/sqaaas-api-server git:
+        - /usr/bin/env sh .sqa/script.scummy-magenta-forest.sh
+        container: qc.doc_homey-ochre-quetzal
+      github.com/EOSC-synergy/sqaaas-api-server git:
         commands:
-        - /usr/bin/env sh .sqa/script.sunny-seashell-llama.sh
-        container: qc.doc_stealthy-rose-koala
-      github.com/eosc-synergy/sqaaas-api-server markdownlint:
+        - /usr/bin/env sh .sqa/script.stealthy-crimson-chipmunk.sh
+        container: qc.doc_shaky-maroon-capuchin
+      github.com/EOSC-synergy/sqaaas-api-server markdownlint:
         commands:
-        - /usr/bin/env sh .sqa/script.gummy-scarlet-coyote.sh
-        container: qc.doc_gimpy-pumpkin-lynx
+        - /usr/bin/env sh .sqa/script.chummy-salmon-moth.sh
+        container: qc.doc_leaky-ultramarine-starfish
   QC.Lic:
     repos:
-      github.com/eosc-synergy/sqaaas-api-server licensee:
+      github.com/EOSC-synergy/sqaaas-api-server licensee:
         commands:
-        - /usr/bin/env sh .sqa/script.smelly-aquamarine-cuscus.sh
-        container: qc.lic_muzzy-grey-leopard
+        - /usr/bin/env sh .sqa/script.cloudy-purple-dogfish.sh
+        container: qc.lic_snippy-ecru-molly
+  QC.Met:
+    repos:
+      github.com/EOSC-synergy/sqaaas-api-server cff-converter-python:
+        commands:
+        - /usr/bin/env sh .sqa/script.muzzy-mustard-paradise.sh
+        container: qc.met_lousy-olivine-hornet
+  QC.Sec:
+    repos:
+      github.com/EOSC-synergy/sqaaas-api-server bandit:
+        commands:
+        - /usr/bin/env sh .sqa/script.clammy-turquoise-tzu.sh
+        container: qc.sec_trippy-tomato-lion
+  QC.Sty:
+    repos:
+      github.com/EOSC-synergy/sqaaas-api-server flake8:
+        commands:
+        - /usr/bin/env sh .sqa/script.woolly-lemon-falcon.sh
+        container: qc.sty_greasy-plum-chihuahua
+      github.com/EOSC-synergy/sqaaas-api-server hadolint:
+        commands:
+        - /usr/bin/env sh .sqa/script.goopy-jade-gar.sh
+        container: qc.sty_pasty-pink-angora
+      github.com/EOSC-synergy/sqaaas-api-server jsonlint:
+        commands:
+        - /usr/bin/env sh .sqa/script.pasty-thistle-maltese.sh
+        container: qc.sty_scanty-cyan-barracuda
+  QC.Uni:
+    repos:
+      github.com/EOSC-synergy/sqaaas-api-server pytest:
+        commands:
+        - /usr/bin/env sh .sqa/script.sleepy-plum-goat.sh
+        container: qc.uni_muggy-seashell-ant
   QC.Ver:
     repos:
-      github.com/eosc-synergy/sqaaas-api-server get_git_tags.py:
+      github.com/EOSC-synergy/sqaaas-api-server get_git_tags.py:
         commands:
-        - /usr/bin/env sh .sqa/script.smelly-lime-birman.sh
-        container: qc.ver_goopy-yellow-vole
+        - /usr/bin/env sh .sqa/script.surly-lemon-goat.sh
+        container: qc.ver_homely-dandelion-otter
 timeout: 5400
