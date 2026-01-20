@@ -5,7 +5,7 @@ config:
       branch: main
       repo: https://github.com/EOSC-synergy/sqaaas-api-server
     github.com/EOSC-synergy/sqaaas-tooling:
-      branch: release/2.2.1
+      branch: feature/Ophidia
       repo: https://github.com/EOSC-synergy/sqaaas-tooling
 environment:
   JPL_DOCKERFORCEBUILD: enabled
@@ -15,64 +15,64 @@ sqa_criteria:
     repos:
       github.com/EOSC-synergy/sqaaas-api-server git:
         commands:
-        - /usr/bin/env sh .sqa/script.sloppy-white-mongoose.sh
-        container: qc.acc_droopy-corn-greyhound
+        - /usr/bin/env sh .sqa/script.lumpy-purple-opossum.sh
+        container: qc.acc_shaky-goldenrod-eleuth
   QC.Doc:
     repos:
       github.com/EOSC-synergy/sqaaas-api-server find_doc_files.py:
         commands:
-        - /usr/bin/env sh .sqa/script.scummy-magenta-forest.sh
-        container: qc.doc_homey-ochre-quetzal
+        - /usr/bin/env sh .sqa/script.muzzy-bistre-reindeer.sh
+        container: qc.doc_hilly-azure-dachshund
       github.com/EOSC-synergy/sqaaas-api-server git:
         commands:
-        - /usr/bin/env sh .sqa/script.stealthy-crimson-chipmunk.sh
-        container: qc.doc_shaky-maroon-capuchin
+        - /usr/bin/env sh .sqa/script.messy-sangria-oriole.sh
+        container: qc.doc_squeaky-firebrick-anteater
       github.com/EOSC-synergy/sqaaas-api-server markdownlint:
         commands:
-        - /usr/bin/env sh .sqa/script.chummy-salmon-moth.sh
-        container: qc.doc_leaky-ultramarine-starfish
+        - /usr/bin/env sh .sqa/script.scummy-orange-rabbit.sh
+        container: qc.doc_ugly-wheat-bullfrog
   QC.Lic:
     repos:
       github.com/EOSC-synergy/sqaaas-api-server licensee:
         commands:
-        - /usr/bin/env sh .sqa/script.cloudy-purple-dogfish.sh
-        container: qc.lic_snippy-ecru-molly
+        - /usr/bin/env sh .sqa/script.bumpy-wheat-fowl.sh
+        container: qc.lic_boozy-sangria-fowl
   QC.Met:
     repos:
       github.com/EOSC-synergy/sqaaas-api-server cff-converter-python:
         commands:
-        - /usr/bin/env sh .sqa/script.muzzy-mustard-paradise.sh
-        container: qc.met_lousy-olivine-hornet
+        - /usr/bin/env sh .sqa/script.squeaky-sapphire-uakari.sh
+        container: qc.met_squirrely-cinnabar-wolf
   QC.Sec:
     repos:
       github.com/EOSC-synergy/sqaaas-api-server bandit:
         commands:
-        - /usr/bin/env sh .sqa/script.clammy-turquoise-tzu.sh
-        container: qc.sec_trippy-tomato-lion
+        - /usr/bin/env sh .sqa/script.lanky-cinnamon-crab.sh
+        container: qc.sec_scummy-ivory-capuchin
   QC.Sty:
     repos:
       github.com/EOSC-synergy/sqaaas-api-server flake8:
         commands:
-        - /usr/bin/env sh .sqa/script.woolly-lemon-falcon.sh
-        container: qc.sty_greasy-plum-chihuahua
+        - /usr/bin/env sh .sqa/script.muggy-vermilion-olm.sh
+        container: qc.sty_droopy-denim-uguisu
       github.com/EOSC-synergy/sqaaas-api-server hadolint:
         commands:
-        - /usr/bin/env sh .sqa/script.goopy-jade-gar.sh
-        container: qc.sty_pasty-pink-angora
+        - /usr/bin/env sh .sqa/script.droopy-fuchsia-termite.sh
+        container: qc.sty_blurry-alizarin-quokka
       github.com/EOSC-synergy/sqaaas-api-server jsonlint:
         commands:
-        - /usr/bin/env sh .sqa/script.pasty-thistle-maltese.sh
-        container: qc.sty_scanty-cyan-barracuda
+        - /usr/bin/env sh .sqa/script.flabby-cerise-antelope.sh
+        container: qc.sty_paltry-pumpkin-squirrel
   QC.Uni:
     repos:
       github.com/EOSC-synergy/sqaaas-api-server pytest:
         commands:
-        - /usr/bin/env sh .sqa/script.sleepy-plum-goat.sh
-        container: qc.uni_muggy-seashell-ant
+        - /usr/bin/env sh .sqa/script.muggy-xanthic-badger.sh
+        container: qc.uni_flaky-razzmatazz-coral
   QC.Ver:
     repos:
       github.com/EOSC-synergy/sqaaas-api-server get_git_tags.py:
         commands:
-        - /usr/bin/env sh .sqa/script.surly-lemon-goat.sh
-        container: qc.ver_homely-dandelion-otter
+        - /usr/bin/env sh .sqa/script.lovely-platinum-harrier.sh
+        container: qc.ver_pokey-firebrick-wombat
 timeout: 5400
