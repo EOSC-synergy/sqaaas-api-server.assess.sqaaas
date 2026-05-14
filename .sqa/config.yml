@@ -5,7 +5,7 @@ config:
       branch: main
       repo: https://github.com/EOSC-synergy/sqaaas-api-server
     github.com/EOSC-synergy/sqaaas-tooling:
-      branch: feature/Ophidia
+      branch: feature/pynblint_fix
       repo: https://github.com/EOSC-synergy/sqaaas-tooling
 environment:
   JPL_DOCKERFORCEBUILD: enabled
@@ -15,64 +15,64 @@ sqa_criteria:
     repos:
       github.com/EOSC-synergy/sqaaas-api-server git:
         commands:
-        - /usr/bin/env sh .sqa/script.trippy-cyan-rabbit.sh
-        container: qc.acc_sleazy-azure-horse
+        - /usr/bin/env sh .sqa/script.bronze_gracious_hummingbird.sh
+        container: qc.acc_pine_aware_groundhog
   QC.Doc:
     repos:
       github.com/EOSC-synergy/sqaaas-api-server find_doc_files.py:
         commands:
-        - /usr/bin/env sh .sqa/script.silly-goldenrod-setter.sh
-        container: qc.doc_randy-blue-frise
+        - /usr/bin/env sh .sqa/script.peach_confident_gecko.sh
+        container: qc.doc_flax_empathetic_finch
       github.com/EOSC-synergy/sqaaas-api-server git:
         commands:
-        - /usr/bin/env sh .sqa/script.trippy-aquamarine-chinchilla.sh
-        container: qc.doc_baggy-wheat-insect
+        - /usr/bin/env sh .sqa/script.orchid_bubbly_pelican.sh
+        container: qc.doc_ivory_vigilant_antelope
       github.com/EOSC-synergy/sqaaas-api-server markdownlint:
         commands:
-        - /usr/bin/env sh .sqa/script.gimpy-tomato-chamois.sh
-        container: qc.doc_scummy-razzmatazz-quokka
+        - /usr/bin/env sh .sqa/script.cornflower_reckless_barracuda.sh
+        container: qc.doc_jasmine_easygoing_kookaburra
   QC.Lic:
     repos:
       github.com/EOSC-synergy/sqaaas-api-server licensee:
         commands:
-        - /usr/bin/env sh .sqa/script.pasty-firebrick-sloth.sh
-        container: qc.lic_fuzzy-rose-wombat
+        - /usr/bin/env sh .sqa/script.onyx_thoughtful_cockatoo.sh
+        container: qc.lic_claret_artistic_squid
   QC.Met:
     repos:
       github.com/EOSC-synergy/sqaaas-api-server cff-converter-python:
         commands:
-        - /usr/bin/env sh .sqa/script.crabby-apricot-labradoodle.sh
-        container: qc.met_whiny-aqua-chipmunk
+        - /usr/bin/env sh .sqa/script.watermelon_industrious_ostrich.sh
+        container: qc.met_flax_warm_sparrow
   QC.Sec:
     repos:
       github.com/EOSC-synergy/sqaaas-api-server bandit:
         commands:
-        - /usr/bin/env sh .sqa/script.shaky-persimmon-dogfish.sh
-        container: qc.sec_silly-carmine-slug
+        - /usr/bin/env sh .sqa/script.moss_protective_ferret.sh
+        container: qc.sec_fog_helpful_tiger
   QC.Sty:
     repos:
       github.com/EOSC-synergy/sqaaas-api-server flake8:
         commands:
-        - /usr/bin/env sh .sqa/script.boozy-cerise-tuatara.sh
-        container: qc.sty_lumpy-cinnamon-markhor
+        - /usr/bin/env sh .sqa/script.rose_aware_raven.sh
+        container: qc.sty_magenta_ambitious_tapir
       github.com/EOSC-synergy/sqaaas-api-server hadolint:
         commands:
-        - /usr/bin/env sh .sqa/script.snoopy-purple-chinook.sh
-        container: qc.sty_chewy-xanthic-tortoise
+        - /usr/bin/env sh .sqa/script.periwinkle_assured_ferret.sh
+        container: qc.sty_nutmeg_nervous_manatee
       github.com/EOSC-synergy/sqaaas-api-server jsonlint:
         commands:
-        - /usr/bin/env sh .sqa/script.nerdy-linen-greyhound.sh
-        container: qc.sty_sleepy-taupe-bandicoot
+        - /usr/bin/env sh .sqa/script.mauve_skeptical_elk.sh
+        container: qc.sty_kiwi_romantic_quokka
   QC.Uni:
     repos:
       github.com/EOSC-synergy/sqaaas-api-server pytest:
         commands:
-        - /usr/bin/env sh .sqa/script.greasy-burgundy-tamarin.sh
-        container: qc.uni_cloudy-purple-eagle
+        - /usr/bin/env sh .sqa/script.gunmetal_sarcastic_hippopotamus.sh
+        container: qc.uni_brown_respectful_finch
   QC.Ver:
     repos:
       github.com/EOSC-synergy/sqaaas-api-server get_git_tags.py:
         commands:
-        - /usr/bin/env sh .sqa/script.snoopy-buff-giraffe.sh
-        container: qc.ver_greasy-alizarin-dugong
+        - /usr/bin/env sh .sqa/script.carmine_reckless_gnu.sh
+        container: qc.ver_pine_impulsive_bear
 timeout: 5400
