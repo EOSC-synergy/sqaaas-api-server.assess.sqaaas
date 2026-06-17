@@ -4,6 +4,6 @@
 # SPDX-License-Identifier: GPL-3.0-only
 
 (
-cd github.com/eosc-synergy/sqaaas-api-server &&
-    find_doc_files.py --file_type all
+cd github.com/EOSC-synergy/sqaaas-api-server &&
+    mdl --json  .
 )
