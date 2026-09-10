@@ -4,6 +4,6 @@
 # SPDX-License-Identifier: GPL-3.0-only
 
 (
-cd github.com/EOSC-synergy/sqaaas-api-server &&
-    pytest  --json-report  --json-report-indent 4
+cd github.com/eosc-synergy/sqaaas-api-server &&
+    flake8 .
 )
