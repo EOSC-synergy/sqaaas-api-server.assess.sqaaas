@@ -20,64 +20,64 @@ sqa_criteria:
     repos:
       github.com/eosc-synergy/sqaaas-api-server git:
         commands:
-        - /usr/bin/env sh .sqa/script.tan_peaceful_macaw.sh
-        container: qc.acc_obsidian_reliable_crane
+        - /usr/bin/env sh .sqa/script.claret_supportive_rhinoceros.sh
+        container: qc.acc_denim_elated_cassowary
   QC.Doc:
     repos:
       github.com/eosc-synergy/sqaaas-api-server find_doc_files.py:
         commands:
-        - /usr/bin/env sh .sqa/script.harlequin_inspired_eagle.sh
-        container: qc.doc_lagoon_assured_panther
+        - /usr/bin/env sh .sqa/script.cinnamon_patient_toad.sh
+        container: qc.doc_green_observant_manatee
       github.com/eosc-synergy/sqaaas-api-server git:
         commands:
-        - /usr/bin/env sh .sqa/script.aqua_jubilant_gnu.sh
-        container: qc.doc_amaranth_elated_phoenix
+        - /usr/bin/env sh .sqa/script.peony_sincere_ocelot.sh
+        container: qc.doc_flint_clever_tiger
       github.com/eosc-synergy/sqaaas-api-server markdownlint:
         commands:
-        - /usr/bin/env sh .sqa/script.cardamom_cautious_bat.sh
-        container: qc.doc_heather_grumpy_newt
+        - /usr/bin/env sh .sqa/script.celadon_driven_serval.sh
+        container: qc.doc_peony_wise_caribou
   QC.Lic:
     repos:
       github.com/eosc-synergy/sqaaas-api-server licensee:
         commands:
-        - /usr/bin/env sh .sqa/script.dawn_resourceful_rhinoceros.sh
-        container: qc.lic_red_whimsical_weasel
+        - /usr/bin/env sh .sqa/script.coral_analytical_groundhog.sh
+        container: qc.lic_chili_rational_ocelot
   QC.Met:
     repos:
       github.com/eosc-synergy/sqaaas-api-server cff-converter-python:
         commands:
-        - /usr/bin/env sh .sqa/script.ginger_rugged_alpaca.sh
-        container: qc.met_ruby_gentle_komodo
+        - /usr/bin/env sh .sqa/script.cosmos_reckless_dingo.sh
+        container: qc.met_wine_fierce_catfish
   QC.Sec:
     repos:
       github.com/eosc-synergy/sqaaas-api-server bandit:
         commands:
-        - /usr/bin/env sh .sqa/script.purple_harmonious_tapir.sh
-        container: qc.sec_banana_aware_impala
+        - /usr/bin/env sh .sqa/script.mint_zealous_whale.sh
+        container: qc.sec_isabelline_elated_quail
   QC.Sty:
     repos:
       github.com/eosc-synergy/sqaaas-api-server flake8:
         commands:
-        - /usr/bin/env sh .sqa/script.flax_smart_macaw.sh
-        container: qc.sty_purple_plucky_raccoon
+        - /usr/bin/env sh .sqa/script.umber_honest_turtle.sh
+        container: qc.sty_fuchsia_rugged_gnu
       github.com/eosc-synergy/sqaaas-api-server hadolint:
         commands:
-        - /usr/bin/env sh .sqa/script.rosewater_adaptable_badger.sh
-        container: qc.sty_champagne_diligent_tortoise
+        - /usr/bin/env sh .sqa/script.pumpkin_stoic_sparrow.sh
+        container: qc.sty_isabelline_thankful_angelfish
       github.com/eosc-synergy/sqaaas-api-server jsonlint:
         commands:
-        - /usr/bin/env sh .sqa/script.brown_peaceful_sparrow.sh
-        container: qc.sty_fuchsia_practical_baboon
+        - /usr/bin/env sh .sqa/script.amethyst_reflective_bullfrog.sh
+        container: qc.sty_ceru_visionary_gibbon
   QC.Uni:
     repos:
       github.com/eosc-synergy/sqaaas-api-server pytest:
         commands:
-        - /usr/bin/env sh .sqa/script.carmine_hopeful_frog.sh
-        container: qc.uni_caramel_agile_spider
+        - /usr/bin/env sh .sqa/script.ruby_understanding_spren.sh
+        container: qc.uni_dusk_perceptive_lemur
   QC.Ver:
     repos:
       github.com/eosc-synergy/sqaaas-api-server get_git_tags.py:
         commands:
-        - /usr/bin/env sh .sqa/script.cinnabar_respectful_orca.sh
-        container: qc.ver_malachite_bold_clownfish
+        - /usr/bin/env sh .sqa/script.cerise_relaxed_termite.sh
+        container: qc.ver_poppy_goofy_komodo
 timeout: 5400
